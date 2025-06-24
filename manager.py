@@ -39,11 +39,11 @@ def search_contacts(contacts):
     if not contacts:
         print("Phone book is empty.")
     else:
-        term = input("Enter search term: ")
-        results = [c for c in contacts if (term.lower() in c['name'].lower() or
-                                            term.lower() in c['email'].lower() or
-                                            term.lower() in c['phone'].lower() or
-                                            term.lower() in c['address'].lower())]
+        key = input("Enter search term: ")
+        results = [c for c in contacts if (key.lower() in c['name'].lower() or
+                                            key.lower() in c['email'].lower() or
+                                            key.lower() in c['phone'].lower() or
+                                            key.lower() in c['address'].lower())]
         if not results:
             print("No contacts found matching the search term.")
         else:
