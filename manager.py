@@ -3,6 +3,7 @@ from validator import is_valid_phone, is_unique_phone, is_unique_email, is_valid
 
 
 def add_contact(contacts):
+    name = input("Enter contact name: ")
     phone = input("Enter contact phone number: ")
     if not is_valid_phone(phone):
         print("Invalid phone number. It must be 11 digits long and start with '01'.")
@@ -11,7 +12,6 @@ def add_contact(contacts):
         print("This phone number already exists in the contacts.")
         add_contact(contacts)
     else:
-        name = input("Enter contact name: ")
         email = input("Enter contact email: ")
         if not is_valid_email(email):
             print("Invalid email format. Please enter a valid email address.")
