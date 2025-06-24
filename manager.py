@@ -16,9 +16,6 @@ def add_contact(contacts):
         if not is_valid_email(email):
             print("Invalid email format. Please enter a valid email address.")
             add_contact(contacts)
-        elif not is_unique_email(email, contacts):
-            print("This email already exists in the contacts.")
-            add_contact(contacts)
         else:
             address = input("Enter contact address: ")
             contacts.append({"name": name, "phone": phone, "email": email, "address": address})
@@ -30,8 +27,8 @@ def view_contacts(contacts):
     if not contacts:
         print("No contacts found.")
     else:
-        print("Contacts:")
-        for contact in contacts: print(f"Name: {contact['name']}, Phone: {contact['phone']}, Email: {contact['email']}, Address: {contact['address']}")
+        print("\nContacts:\n--------------------")
+        for contact in contacts: print(f"Name: {contact['name']}\nPhone: {contact['phone']}\nEmail: {contact['email']}\nAddress: {contact['address']}\n--------------------")
 
 
 
