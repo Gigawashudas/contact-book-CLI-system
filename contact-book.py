@@ -1,8 +1,7 @@
 
 
 
-
-from manager import add_contact, view_contacts, search_contacts, remove_contact
+from manager import add_contact, view_contacts, remove_contact, search_contacts
 from file_handling import load_contacts
 
 
@@ -17,9 +16,9 @@ while True:
     print("4. Remove Contact")
     print("5. Exit")
     print("============================")
-    
-    choice = input("Enter your choice: ")
 
+    choice = input("Enter your choice: ")
+    
     if choice == '1': add_contact(contacts)
     elif choice == '2': view_contacts(contacts)
     elif choice == '3': search_contacts(contacts)

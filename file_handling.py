@@ -17,10 +17,10 @@ def load_contacts(contact_book='contacts.csv'):
         print("No contacts file found. Starting with an empty phone book.")
     return contacts
 
-def save_contacts(contacts, contact_book='contacts.csv'):
+def save_contacts(contacts, contact_book='contacts.csv', text=''):
     with open(contact_book, 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=['name', 'phone', 'email', 'address'])
         writer.writeheader()
         for contact in contacts:
             writer.writerow(contact)
-    print("Contacts saved successfully.")
+        print(text)
