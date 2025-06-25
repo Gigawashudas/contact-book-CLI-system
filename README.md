@@ -1,3 +1,9 @@
+
+
+
+To start the project run main.py
+
+
 # contact book CLI system
 
 TASKS:

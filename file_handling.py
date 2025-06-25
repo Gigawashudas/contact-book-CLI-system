@@ -5,7 +5,6 @@ import csv
 
 
 
-
 def load_contacts(contact_book='contacts.csv'):
     contacts = []
     try:
