@@ -20,7 +20,7 @@ def add_contact(contacts):
     }
 
     contacts.append(new_contact)
-    view([new_contact])
+    view([new_contact], text="New Contact Added")
     save_contacts(contacts, text = "Contact saved successfully.")
 
 

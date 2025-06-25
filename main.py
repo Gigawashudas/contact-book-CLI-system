@@ -10,11 +10,8 @@ contacts = load_contacts('contacts.csv')
 
 while True:
     print("\n=========== MENU ===========")
-    print("1. Add Contact")
-    print("2. View Contacts")
-    print("3. Search Contact")
-    print("4. Remove Contact")
-    print("5. Exit")
+    print("1. Add Contact     2. View Contacts")
+    print("3. Search Contact  4. Remove Contact   5. Exit")
     print("============================")
 
     choice = input("Enter your choice: ")

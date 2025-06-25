@@ -30,12 +30,23 @@ def view(contacts, text='Contacts'):
 def name_input():
     
     while True:
-        name = input("Enter contact name: ").strip()
-        if not name:
-            print("Name cannot be empty. Please enter a valid name.")
+        fname = str(input("Enter your first name: ").strip())
+        if not fname:
+            print("First name cannot be empty. Please enter a valid name.")
+        elif not fname.isalpha():
+            print("First name must contain only alphabetic characters. Please enter a valid name.")
         else:
             break
-    return name
+    
+    while True:
+        lname = str(input("Enter your last name: ").strip())
+        if not lname:
+            print("Last name cannot be empty. Please enter a valid name.")
+        elif not lname.isalpha():
+            print("Last name must contain only alphabetic characters. Please enter a valid name.")
+        else:
+            break
+    return f"{fname} {lname}"
 
 
 def phone_input(contacts):
