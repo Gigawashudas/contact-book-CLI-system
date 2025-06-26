@@ -14,6 +14,7 @@ def load_contacts(contact_book='contacts.csv'):
                 contacts.append(row)
     except FileNotFoundError:
         print("No contacts file found. Starting with an empty phone book.")
+    print("\nWelcome to the Contact Book CLI System!")
     return contacts
 
 def save_contacts(contacts, contact_book='contacts.csv', text=''):

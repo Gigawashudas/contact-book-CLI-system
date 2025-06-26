@@ -9,7 +9,7 @@ from file_handling import load_contacts
 contacts = load_contacts('contacts.csv')
 
 while True:
-    print("\n=========== MENU ===========")
+    print("=========== MENU ===========")
     print("1. Add Contact     2. View Contacts     3. Search Contacts")
     print("4. Remove Contact  5. Remove All        6. Exit")
     print("============================")
