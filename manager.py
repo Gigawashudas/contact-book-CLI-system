@@ -44,7 +44,7 @@ def remove_contact(contacts):
     key = input("Enter the name of the contact to remove: ")
     contact_to_remove = next(iter(search(contacts, key)), None)
     if contact_to_remove:
-        view([contact_to_remove], text = "Contact")
+        view([contact_to_remove], text = "Removed contact")
         contacts.remove(contact_to_remove)
         save_contacts(contacts, text = "Contact removed successfully.")
     else:
