@@ -49,3 +49,14 @@ def remove_contact(contacts):
         save_contacts(contacts, text = "Contact removed successfully.")
     else:
         print(f"{key} not found.")
+        
+def remove_all_contacts(contacts):
+    confirmation = input("Are you sure you want to remove all contacts? (yes/no): ").strip().lower()
+    if confirmation == 'yes':
+        contacts.clear()
+        save_contacts(contacts, text = "All contacts removed successfully.")
+        print("All contacts have been removed.")
+    elif confirmation == 'no':
+        print("Operation cancelled. No contacts were removed.")
+    else:
+        print("Invalid input. Operation cancelled. No contacts were removed.")
